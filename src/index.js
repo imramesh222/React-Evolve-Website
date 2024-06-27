@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from './App';
+
 
 import Myroute from './Myroute';
 
@@ -13,7 +13,7 @@ root.render(
     
     
 
-    <App />
+  
 
     <Myroute/>
   </React.StrictMode>
