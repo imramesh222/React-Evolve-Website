@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const Nav = () => {
   return (
@@ -14,7 +16,7 @@ const Nav = () => {
        </div>
 
         <div className='d-flex justify-content-centre px-2'>
-          <a href='#' className='fs-2 text-dark px-1'><i class="bi bi-person-add"></i></a>
+        <Link to={'login'}><a href='#' className='fs-2 text-dark px-1'><i class="bi bi-person-add"></i></a></Link> 
          <a href='#' className='fs-2 text-dark px-1'><i class="bi bi-box-arrow-in-right"></i></a>
          <a href='#' className='fs-2 text-dark px-1'><i class="bi bi-person-circle"></i></a>
        </div>

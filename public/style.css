@@ -57,3 +57,23 @@
 .bg-secondary {
   background-color: #f8f9fa !important;
 }
+.col{
+  height: 350px;
+
+}
+.col .card{
+  height: 100%;
+  object-fit: cover;
+}
+.card .card-body{
+  padding: 0;
+}
+.col .card .img{
+  height: 200px;
+
+}
+.img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
