@@ -10,7 +10,7 @@ const Card = () => {
             <div className="col shadow p-2 rounded-3">
               <div className="card border-0">
                 <div className="img">
-                <img src="./images/p1.jpg" alt="image 1" id='img'/>
+                   <img src="./images/p1.jpg" alt="image 1" id='img'/>
                 </div>
                 
                 <div className="card-body">
@@ -28,7 +28,7 @@ const Card = () => {
             <div className="col shadow p-2 rounded-3">
               <div className="card border-0">
                 <div className="img">
-                <img src="./images/p3.jpg" alt="image 1" id='img'/>
+                  <img src="./images/p3.jpg" alt="image 1" id='img'/>
                 </div>
                 
                 <div className="card-body">
@@ -46,7 +46,7 @@ const Card = () => {
             <div className="col shadow p-2 rounded-3">
               <div className="card border-0">
                 <div className="img">
-                <img src="./images/p4.jpg" alt="image 1" id='img'/>
+                  <img src="./images/p4.jpg" alt="image 1" id='img'/>
                 </div>
                 
                 <div className="card-body">
@@ -64,7 +64,7 @@ const Card = () => {
             <div className="col shadow p-2 rounded-3">
               <div className="card border-0">
                 <div className="img">
-                <img src="./images/p5.jpg" alt="image 1" id='img'/>
+                  <img src="./images/p5.jpg" alt="image 1" id='img'/>
                 </div>
                 
                 <div className="card-body">
