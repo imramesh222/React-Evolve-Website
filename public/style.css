@@ -63,17 +63,18 @@
 }
 .col .card{
   height: 100%;
-  object-fit: cover;
+  
 }
 .card .card-body{
   padding: 0;
 }
 .col .card .img{
-  height: 200px;
+  height: 70%;
+  object-fit: cover;
 
 }
 .img img{
   height: 100%;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
