@@ -4,6 +4,7 @@ import Homepage from './pages/Homepage'
 import Layout from './pages/Layout'
 import Loginpage from './pages/Loginpage'
 import Productpage from './pages/Productpage'
+import Singnuppage from './pages/Singnuppage'
 
 
 const Myroute = () => {
@@ -16,6 +17,8 @@ const Myroute = () => {
           </Route>
           <Route path='login' element={<Loginpage/>}/>
           <Route path='product' element={<Productpage/>}/>
+          <Route path='signup' element={<Singnuppage/>}/>
+
           
         </Routes>
       </Router>

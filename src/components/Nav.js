@@ -20,13 +20,13 @@ const Nav = () => {
           </Link>
         </div>
         <div className='d-flex justify-content-centre px-2'>
-          <Link to='/login' className='fs-2 text-dark px-1'>
+          <Link to='login' className='fs-2 text-dark px-1'>
             <i className='bi bi-person-add'></i>
           </Link>
-          <Link to='/register' className='fs-2 text-dark px-1'>
+          <Link to='/signup' className='fs-2 text-dark px-1'>
             <i className='bi bi-box-arrow-in-right'></i>
           </Link>
-          <Link to='/profile' className='fs-2 text-dark px-1'>
+          <Link to='profile' className='fs-2 text-dark px-1'>
             <i className='bi bi-person-circle'></i>
           </Link>
         </div>
