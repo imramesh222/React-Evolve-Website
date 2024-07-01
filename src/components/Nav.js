@@ -23,7 +23,7 @@ const Nav = () => {
           <Link to='login' className='fs-2 text-dark px-1'>
             <i className='bi bi-person-add'></i>
           </Link>
-          <Link to='/signup' className='fs-2 text-dark px-1'>
+          <Link to='signup' className='fs-2 text-dark px-1'>
             <i className='bi bi-box-arrow-in-right'></i>
           </Link>
           <Link to='profile' className='fs-2 text-dark px-1'>

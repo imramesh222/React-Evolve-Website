@@ -58,23 +58,30 @@
   background-color: #f8f9fa !important;
 }
 .col{
-  height: 350px;
+  height: 450px;
+
 
 }
 .col .card{
   height: 100%;
+ 
+  /* overflow: hidden; */
   
 }
-.card .card-body{
-  padding: 0;
-}
+
 .col .card .img{
-  height: 70%;
+  height: 60%;
   object-fit: cover;
+  overflow: hidden;
 
 }
 .img img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.card .card-body{
+  padding: 0;
+  
+
 }

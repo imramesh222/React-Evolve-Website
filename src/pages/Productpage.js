@@ -81,12 +81,20 @@
 
 // export default Productpage;
 
+
+
+
+
 import React from 'react'
 import Card from '../components/Card'
+import Nav from '../components/Nav'
+import Header from '../components/Header'
 
 const Productpage = () => {
   return (
     <>
+    <Header/>
+    <Nav/>
     <div className="d-flex">
       <div className="col-2 p-2 bg-secondary">
         <h3>All depratments</h3>

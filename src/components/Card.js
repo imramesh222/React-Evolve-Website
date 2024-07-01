@@ -4,7 +4,7 @@ const Card = () => {
   return (
     <>
     <div className="container py-4 ">
-      <h2 className='text-success '>Products</h2>
+      <h2 className='text-success text-center text-uppercase'>Products</h2>
       <hr />
         <div className="row row-cols-1 row-cols-md-4 g-4 ">
             <div className="col shadow p-2 rounded-3">

@@ -18,6 +18,7 @@ const Myroute = () => {
           <Route path='login' element={<Loginpage/>}/>
           <Route path='product' element={<Productpage/>}/>
           <Route path='signup' element={<Singnuppage/>}/>
+          <Route path='login' element={<Loginpage/>}/>
 
           
         </Routes>

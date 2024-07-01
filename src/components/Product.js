@@ -1,8 +1,13 @@
 import React from 'react';
+import Header from './Header';
+import Nav from './Nav';
+
 
 const Product = () => {
   return (
+    <>
     <div className='container justify-content-center align-items-center'>
+   
       <h1 className='text-center'>Products</h1>
       <div className='bg-secondary py-2 col-md-12'>
         <div className='row d-flex justify-content-center p-2 flex-wrap'>
@@ -109,6 +114,7 @@ const Product = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
