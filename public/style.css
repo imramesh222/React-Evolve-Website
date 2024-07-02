@@ -85,3 +85,10 @@
   
 
 }
+
+.nav-link:hover{
+  color: #fff;
+  background: rgb(8, 8, 8);
+  padding: 10px;
+  border-radius: 5px;
+}

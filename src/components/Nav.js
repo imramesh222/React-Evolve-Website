@@ -6,7 +6,7 @@ const Nav = () => {
     <div className='bg-secondary sticky-top'>
       <div className='d-flex p-2 justify-content-between text-bg-secondary'>
         <div className='nav-items d-flex justify-content-around w-50'>
-          <Link to='/' className='nav-link d-flex align-items-center text-decoration-none mb-lg-0 active'>
+          <Link to='/' className='nav-link d-flex align-items-center text-decoration-none mb-lg-0'>
             <h1>Home</h1>
           </Link>
           <Link to='/product' className='nav-link d-flex align-items-center text-decoration-none'>
