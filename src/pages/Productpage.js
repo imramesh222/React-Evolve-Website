@@ -85,16 +85,24 @@
 
 
 
-import React from 'react'
+import React, { useState } from 'react'
 import Card from '../components/Card'
 import Nav from '../components/Nav'
 import Header from '../components/Header'
+import axios from 'axios'
 
 const Productpage = () => {
+
+  const[products,setProducts]=useState([]);
+
+  axios
+  .get("https://fakestoreapi.com/products")
+  .then((res)=>setProducts(res.data))
+  .catch(err=>console.log(err))
+
   return (
     <>
-    <Header/>
-    <Nav/>
+
     <div className="d-flex">
       <div className="col-2 p-2 bg-secondary">
         <h3>All depratments</h3>
@@ -122,8 +130,12 @@ const Productpage = () => {
         </div>
 
       </div>
-      <div className="col-9">
+      <div className="row col-10 row-cols-1 row-cols-md-3 g-3">
+        {/* <Card/> */}
+        {products.slice(0,20).map(()=>
         <Card/>
+        )}
+
       </div>
     </div>
       

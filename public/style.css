@@ -57,34 +57,12 @@
 .bg-secondary {
   background-color: #f8f9fa !important;
 }
-.col{
-  height: 450px;
 
-
-}
-.col .card{
-  height: 100%;
- 
-  /* overflow: hidden; */
-  
+#img{
+  height: 200px;
+  object-fit: contain;
 }
 
-.col .card .img{
-  height: 60%;
-  object-fit: cover;
-  overflow: hidden;
-
-}
-.img img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.card .card-body{
-  padding: 0;
-  
-
-}
 
 .nav-link:hover{
   color: #fff;
