@@ -6,6 +6,7 @@ import Product from "../components/Product";
 import Card from "../components/Card";
 import Productpage from "./Productpage";
 import axios from "axios";
+import Departments from "../components/Departments";
 
 const Homepage = () => {
   const [products, setProducts] = useState([]);
@@ -13,20 +14,22 @@ const Homepage = () => {
   axios
     .get("https://fakestoreapi.com/products")
     .then((res) => setProducts(res.data))
-    .catch(err=>console.log(err));
+    .catch((err) => console.log(err));
   return (
     <>
       <Slider />
+      <div className="d-flex">
+      <Departments/>
 
-      <div className="container py-4 ">
-      <h2 className="text-success text-center">Products</h2>
-      <hr />
-        <div className="row row-cols-1 row-cols-md-3 g-3">
-          
-          {products.slice(0,3).map((product,i)=> (
-            <Card item={product} key={i}/>
+      <div className="container py-4 col-10 ">
+        <h2 className="text-success text-center pb-4">PRODUCTS</h2>
+
+        <div className="row row-cols-1 row-cols-md-4 g-3">
+          {products.slice(0, 4).map((product, i) => (
+            <Card item={product} key={i} />
           ))}
         </div>
+      </div>
       </div>
 
       <script

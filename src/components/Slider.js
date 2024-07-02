@@ -6,13 +6,13 @@ const Slider = () => {
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
        <div class="carousel-inner">
         <div class="carousel-item active">
-         <img src="./images/p1.jpg" class="d-block " alt="..."/>
+         <img src="./images/daraz1.jpg" class="d-block " alt="..."/>
         </div>
         <div class="carousel-item">
-         <img src="./images/p2.jpg" class="d-block " alt="..."/>
+         <img src="./images/daraz2.jpg" class="d-block " alt="..."/>
         </div>
         <div class="carousel-item">
-         <img src="./images/p4.jpg" class="d-block " alt="..."/>
+         <img src="./images/daraz3.jpg" class="d-block " alt="..."/>
         </div>
        </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

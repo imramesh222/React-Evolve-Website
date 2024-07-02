@@ -90,6 +90,7 @@ import Card from '../components/Card'
 import Nav from '../components/Nav'
 import Header from '../components/Header'
 import axios from 'axios'
+import Departments from '../components/Departments'
 
 const Productpage = () => {
 
@@ -104,36 +105,11 @@ const Productpage = () => {
     <>
 
     <div className="d-flex">
-      <div className="col-2 p-2 bg-secondary">
-        <h3>All depratments</h3>
-        <p className='text-primary'>See all</p>
-        <hr />
-        <div className="mb-2">
-          <input type="checkbox" className='me-1' />
-          <label>Books</label>
-        </div>
-        <div className="mb-2">
-          <input type="checkbox" className='me-1' />
-          <label>Electronics</label>
-        </div>
-        <div className="mb-2">
-          <input type="checkbox" className='me-1' />
-          <label>cars</label>
-        </div>
-        <div className="mb-2">
-          <input type="checkbox" className='me-1' />
-          <label>Clothes</label>
-        </div>
-        <div className="mb-2">
-          <input type="checkbox" className='me-1' />
-          <label>Books</label>
-        </div>
-
-      </div>
-      <div className="row col-10 row-cols-1 row-cols-md-3 g-3">
-        {/* <Card/> */}
-        {products.slice(0,20).map(()=>
-        <Card/>
+      <Departments/>
+      <div className="row col-10 row-cols-1 row-cols-md-4 g-3 mx-2">
+        
+        {products.slice(0,20).map((product,i)=>
+        <Card item={product} key={i}/>
         )}
 
       </div>
