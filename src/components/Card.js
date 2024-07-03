@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Card = (props) => {
   return (
@@ -12,7 +13,7 @@ const Card = (props) => {
                   <h3 className=''>{props.item.title.slice(0,10)}..</h3>
                   <p className='text-success fw-bold'>$ {props.item.price}</p>
                   <div className="d-flex justify-content-between ">
-                      <button className='btn btn-primary'><i class="bi bi-eye"></i>  View Details</button>
+                      <Link to={`productdetails/${props.item.id}`}> <button className='btn btn-primary'><i class="bi bi-eye"></i>  View Details</button></Link>
                       <button className='btn btn-secondary'><i class="bi bi-cart-plus-fill"></i>  Cart</button>
                   </div>
                   <hr className='container-fluid'  />

@@ -6,14 +6,14 @@ import Nav from '../components/Nav'
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <Header/>
       <Nav/>
 
       <Outlet/>
 
       <Footer/>
-    </div>
+    </>
   )
 }
 
