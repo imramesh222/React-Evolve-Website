@@ -20,10 +20,11 @@ const Myroute = () => {
           <Route path='product' element={<Productpage/>}/>
           <Route path='signup' element={<Singnuppage/>}/>
           <Route path='login' element={<Loginpage/>}/>
+          <Route path='productdetails/:product_id' element={<ProductDetail/>}/>
 
           </Route>
           <Route path='counter' element={<Counter/>}/>
-          <Route path='productdetails/:product_id' element={<ProductDetail/>}/>
+          
 
 
           
