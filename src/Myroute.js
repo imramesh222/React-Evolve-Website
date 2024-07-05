@@ -14,20 +14,20 @@ const Myroute = () => {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<Layout/>} >
-          <Route index element={<Homepage/>}/>
-          <Route path='login' element={<Loginpage/>}/>
-          <Route path='product' element={<Productpage/>}/>
-          <Route path='signup' element={<Singnuppage/>}/>
-          <Route path='login' element={<Loginpage/>}/>
-          <Route path='productdetails/:product_id' element={<ProductDetail/>}/>
+          <Route path='/' element={<Layout />} >
+            <Route index element={<Homepage />} />
+            <Route path='login' element={<Loginpage />} />
+            <Route path='product' element={<Productpage />} />
+            <Route path='signup' element={<Singnuppage />} />
+            <Route path='login' element={<Loginpage />} />
+            <Route path='productdetails/:product_id' element={<ProductDetail />} />
 
           </Route>
-          <Route path='counter' element={<Counter/>}/>
-          
+          <Route path='counter' element={<Counter />} />
 
 
-          
+
+
         </Routes>
       </Router>
     </>

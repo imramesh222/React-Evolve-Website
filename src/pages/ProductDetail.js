@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import RatingStar from "../components/RatingStar";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetail = () => {
   const [product, setProduct] = useState({});
@@ -23,6 +25,7 @@ const ProductDetail = () => {
 
   return (
     <>
+      <ToastContainer theme="dark" position="top-right"/>
       <div className="container">
         <div className="d-md-flex justify-content-evenly">
           <div className="col-md-4">
@@ -30,7 +33,7 @@ const ProductDetail = () => {
           </div>
           <div className="col-md-6">
             <Link to={"/"}>Home</Link>/
-            <Link to={"products"}>products</Link>/
+            <Link to={"product"}>products</Link>/
             <span><Link className="text-secondary">{product.title}</Link></span>
 
             <h2 className="m-0">{product.title}</h2>
