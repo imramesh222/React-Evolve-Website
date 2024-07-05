@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaStar,FaStarHalf,FaRegStar, FaStarHalfAlt } from "react-icons/fa";
+import { FaStar,FaRegStar, FaStarHalfAlt } from "react-icons/fa";
 
 const RatingStar = (props) => {
 
@@ -10,7 +10,7 @@ const RatingStar = (props) => {
       stars.push(<FaStar key={i}/>)
     }
     else if(i==Math.ceil(rating) && !Number.isInteger(rating)){
-      stars.push(<FaStarHalf key={i}/>)
+      stars.push(<FaStarHalfAlt key={i}/>)
     }
     else{
       stars.push(<FaRegStar key={i}/>)
@@ -19,7 +19,8 @@ const RatingStar = (props) => {
 
   return (
     <>
-   {stars}
+    <p className='fw-bold'>Reviews : <span className='text-warning'>{stars}</span></p>
+   
       
     </>
   )

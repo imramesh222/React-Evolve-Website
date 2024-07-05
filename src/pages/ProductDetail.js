@@ -70,3 +70,27 @@ const ProductDetail = () => {
 };
 
 export default ProductDetail;
+
+
+
+
+// import React, { useEffect, useState } from 'react'
+// import { useParams } from 'react-router-dom'
+
+// const ProductDetail = () => {
+//   const [product,setProduct]=useState({})
+
+//   const params=useParams();
+
+//   useEffect(()=>{
+//     const pid=params.product_id;
+//   })
+
+//   return (
+//     <>
+      
+//     </>
+//   )
+// }
+
+// export default ProductDetail
