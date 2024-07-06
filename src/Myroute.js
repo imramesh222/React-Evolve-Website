@@ -7,6 +7,7 @@ import Productpage from './pages/Productpage'
 import Singnuppage from './pages/Singnuppage'
 import Counter from './hook/Counter'
 import ProductDetail from './pages/ProductDetail'
+import Product_page from './Demo pages/Product_page'
 
 
 const Myroute = () => {
@@ -21,6 +22,7 @@ const Myroute = () => {
             <Route path='signup' element={<Singnuppage />} />
             <Route path='login' element={<Loginpage />} />
             <Route path='productdetails/:product_id' element={<ProductDetail />} />
+            <Route path='demo_product' element={<Product_page/>}/>
 
           </Route>
           <Route path='counter' element={<Counter />} />
