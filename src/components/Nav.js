@@ -12,8 +12,8 @@ const Nav = () => {
           <Link to='/product' className='nav-link d-flex align-items-center text-decoration-none'>
             <h1>Products</h1>
           </Link>
-          <Link to='/services' className='nav-link d-flex align-items-center text-decoration-none'>
-            <h1>Services</h1>
+          <Link to='/cart' className='nav-link d-flex align-items-center text-decoration-none'>
+            <h1>Cart</h1>
           </Link>
           <Link to='/contacts' className='nav-link d-flex align-items-center text-decoration-none'>
             <h1>Contacts</h1>

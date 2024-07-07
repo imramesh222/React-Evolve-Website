@@ -8,6 +8,7 @@ import Singnuppage from './pages/Singnuppage'
 import Counter from './hook/Counter'
 import ProductDetail from './pages/ProductDetail'
 import Product_page from './Demo pages/Product_page'
+import CartPage from './pages/CartPage'
 
 
 const Myroute = () => {
@@ -18,6 +19,7 @@ const Myroute = () => {
           <Route path='/' element={<Layout />} >
             <Route index element={<Homepage />} />
             <Route path='login' element={<Loginpage />} />
+            <Route path='cart' element={<CartPage/>}/>
             <Route path='product' element={<Productpage />} />
             <Route path='signup' element={<Singnuppage />} />
             <Route path='login' element={<Loginpage />} />
