@@ -20,50 +20,10 @@
 .nav-items>a>h1{
   font-size: 20px;
   justify-content: space-between;
-
-
-/* Products */
-
-
-}
-/* .row-product-items{
-  width: 300px;
-  height: 400px;
-} */
-/* .product-card{
-  width: 300px;
-  height: 400px;
-} */
-/* .row-product-items>.product-card>img{
-  width: 300px;
-  height: 400px;
-} */
-
-
-/* for product.js component */
-.container {
-  max-width: 1200px;
 }
 
-.product-card {
-  background-color: white;
-  padding: 10px;
-  height: 300px; /* Set a fixed height for the cards */
 
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
 
-.product-card img {
-  width: 100%;
-  height: 200px;
- 
-}
-
-.bg-secondary {
-  background-color: #f8f9fa !important;
-}
 
 
 /* for card img */
@@ -73,8 +33,8 @@
 }
 
 #card:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+  /* transform: scale(1.05);
+  transition: transform 0.3s ease; */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -82,7 +42,7 @@
 .nav-link:hover{
   color: #fff;
   background: rgb(8, 8, 8);
-  padding: 10px;
+  
   border-radius: 5px;
 }
 

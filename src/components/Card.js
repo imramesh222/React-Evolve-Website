@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Card = (props) => {
   return (
     <>
-      <div className="col p-2 g-2">
+      <div className="col px-2 g-2">
         <div className="card border-0" id="card">
           <img src={props.item.image} alt="image 1" id="img" className="pt-2" />
 

@@ -6,16 +6,16 @@ const Nav = () => {
     <div className='bg-secondary sticky-top'>
       <div className='d-flex p-2 justify-content-between text-bg-secondary'>
         <div className='nav-items d-flex justify-content-around w-50'>
-          <Link to='/' className='nav-link d-flex align-items-center text-decoration-none mb-lg-0'>
+          <Link to='/' className='nav-link d-flex align-items-center text-decoration-none mb-lg-0 px-3'>
             <h1>Home</h1>
           </Link>
-          <Link to='/product' className='nav-link d-flex align-items-center text-decoration-none'>
+          <Link to='/product' className='nav-link d-flex align-items-center text-decoration-none px-3'>
             <h1>Products</h1>
           </Link>
-          <Link to='/cart' className='nav-link d-flex align-items-center text-decoration-none'>
+          <Link to='/cart' className='nav-link d-flex align-items-center text-decoration-none px-3'>
             <h1>Cart</h1>
           </Link>
-          <Link to='/contacts' className='nav-link d-flex align-items-center text-decoration-none'>
+          <Link to='/contacts' className='nav-link d-flex align-items-center text-decoration-none px-3'>
             <h1>Contacts</h1>
           </Link>
         </div>

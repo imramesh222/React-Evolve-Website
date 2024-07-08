@@ -11,12 +11,14 @@ const Productpage = () => {
     .get("https://fakestoreapi.com/products")
     .then((res) => setProducts(res.data))
     .catch((err) => console.log(err));
-
+  const[showMoreclicked,setClicked]=useState(false)
   const showMore = () => {
     setLimit(limit + 6);
+    setClicked(true)
   };
   const showLess = () => {
     setLimit(12);
+    setClicked(false)
   };
 
   return (
@@ -31,13 +33,13 @@ const Productpage = () => {
       </div>
       <div className="d-flex justify-content-end">
         {limit < products.length && (
-          <button className="btn btn-primary" onClick={showMore}>
+          <button className="btn btn-primary mx-2" onClick={showMore}>
             Show more
           </button>
         )}
 
-        {limit > products.length && (
-          <button className="btn btn-danger" onClick={showLess}>
+        {showMoreclicked && (
+          <button className="btn btn-danger mx-2" onClick={showLess}>
             Show less
           </button>
         )}
