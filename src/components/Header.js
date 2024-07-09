@@ -19,7 +19,7 @@ const Header = () => {
           >
             <input
               type="search"
-              className="form-control-dark mx-2"
+              className="form-control-dark mr-2"
               aria-label="Search"
               placeholder="Search..."
             />

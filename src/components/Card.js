@@ -7,13 +7,11 @@ const Card = (props) => {
       <div className="col px-2 g-2">
         <div className="card border-0" id="card">
           <img src={props.item.image} alt="image 1" id="img" className="pt-2" />
-
           <div className="card-body px-2">
             <h3 className="">{props.item.title.slice(0, 10)}..</h3>
             <p className="text-success fw-bold">$ {props.item.price}</p>
-            <div className="d-flex justify-content-between ">
-              <Link to={`productdetails/${props.item.id}`}>
-                {" "}
+            <div className="d-flex justify-content-between">
+              <Link to={`/product/productdetails/${props.item.id}`}>
                 <button className="btn btn-primary">
                   <i className="bi bi-eye"></i> View Details
                 </button>
