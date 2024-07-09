@@ -11,6 +11,7 @@ import Product_page from './Demo pages/Product_page';
 
 import CheckOutPage from './pages/CheckOutPage';
 import Demo_cartPage from './Demo pages/Demo_cartPage';
+import CartPage from './pages/CartPage';
 
 const Myroute = () => {
   return (
@@ -20,7 +21,7 @@ const Myroute = () => {
           <Route path='/' element={<Layout />}>
             <Route index element={<Homepage />} />
             <Route path='login' element={<Loginpage />} />
-            <Route path='cart' element={<Demo_cartPage/>} />
+            <Route path='cart' element={<CartPage/>} />
             <Route path='product' element={<Productpage />} />
             <Route path='signup' element={<Singnuppage />} />
             <Route path='login' element={<Loginpage />} />
