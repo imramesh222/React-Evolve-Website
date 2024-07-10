@@ -440,4 +440,4 @@ const CartPage = () => {
   );
 };
 
-export default CartPage; // Exporting the CartPage component
+export default CartPage; 
