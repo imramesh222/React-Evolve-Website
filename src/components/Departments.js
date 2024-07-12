@@ -3,7 +3,9 @@ import React from "react";
 const Departments = () => {
   return (
     <>
-      <div className="col-2 p-2 bg-light">
+    <div className="d-flex flex-column">
+
+      <div className=" p-2 bg-light">
         <h3>All depratments</h3>
         <p className="text-primary">See all</p>
         <hr />
@@ -28,7 +30,7 @@ const Departments = () => {
           <label>Books</label>
         </div>
       </div>
-      <div className="col-2 p-2 bg-light">
+      <div className="p-2 bg-light">
         <h3>Categories</h3>
         <hr />
         <div className="mb-2">
@@ -36,6 +38,7 @@ const Departments = () => {
           <label>Books</label>
         </div>
 
+    </div>
       </div>
     </>
   );

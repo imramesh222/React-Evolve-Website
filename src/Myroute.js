@@ -10,7 +10,7 @@ import ProductDetail from './pages/ProductDetail';
 import Product_page from './Demo pages/Product_page';
 
 import CheckOutPage from './pages/CheckOutPage';
-import Demo_cartPage from './Demo pages/Demo_cartPage';
+
 import CartPage from './pages/CartPage';
 
 const Myroute = () => {
@@ -27,7 +27,7 @@ const Myroute = () => {
             <Route path='login' element={<Loginpage />} />
             <Route path='product/productdetails/:product_id' element={<ProductDetail />} />
             <Route path='checkout' element={<CheckOutPage />} />
-            <Route path='demo_product' element={<Product_page />} />
+            
           </Route>
           <Route path='counter' element={<Counter />} />
         </Routes>
