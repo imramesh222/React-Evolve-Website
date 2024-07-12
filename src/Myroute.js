@@ -7,10 +7,7 @@ import Productpage from './pages/Productpage';
 import Singnuppage from './pages/Singnuppage';
 import Counter from './hook/Counter';
 import ProductDetail from './pages/ProductDetail';
-import Product_page from './Demo pages/Product_page';
-
 import CheckOutPage from './pages/CheckOutPage';
-
 import CartPage from './pages/CartPage';
 
 const Myroute = () => {
@@ -26,8 +23,7 @@ const Myroute = () => {
             <Route path='signup' element={<Singnuppage />} />
             <Route path='login' element={<Loginpage />} />
             <Route path='product/productdetails/:product_id' element={<ProductDetail />} />
-            <Route path='checkout' element={<CheckOutPage />} />
-            
+            <Route path='checkout' element={<CheckOutPage />} />       
           </Route>
           <Route path='counter' element={<Counter />} />
         </Routes>
