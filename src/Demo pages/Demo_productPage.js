@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Card from "../components/Card";
 import axios from "axios";
 import Departments from "../components/Departments";
+import Card from "../components/Card";
 
-const Productpage = () => {
+const Demo_productPage = () => {
   const [products, setProducts] = useState([]);
   const [limit, setLimit] = useState(12);
   const [showMoreClicked, setClicked] = useState(false);
@@ -41,6 +41,7 @@ const Productpage = () => {
             Show more
           </button>
         )}
+
         {showMoreClicked && (
           <button className="btn btn-danger mx-2" onClick={showLess}>
             Show less
@@ -51,4 +52,4 @@ const Productpage = () => {
   );
 };
 
-export default Productpage;
+export default Demo_productPage;
