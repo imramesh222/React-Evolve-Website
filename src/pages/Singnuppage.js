@@ -1,57 +1,130 @@
 import React from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
-const Singnuppage = () => {
+const SignupPage = () => {
   return (
     <>
-      <main className="form-signin w-100 m-auto">
-        <form>
-          <img
-            className="mb-4"
-            src="./images/fav.png"
-            alt=""
-            width="72"
-            height="57"
-          />
-          <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+      <Formik
+        initialValues={{
+          fname: "",
+          lname: "",
+          email: "",
+          pwd: "",
+          cpwd: "",
+        }}
+        validationSchema={Yup.object({
+          fname: Yup.string()
+            .required("first name is mandatory")
+            .max(20, "First name must be lower than 20 characters"),
 
-          <div className="form-floating">
-            <input
-              type="email"
-              className="form-control"
-              id="floatingInput"
-              placeholder="name@example.com"
-            />
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div className="form-floating">
-            <input
-              type="password"
-              className="form-control"
-              id="floatingPassword"
-              placeholder="Password"
-            />
-            <label for="floatingPassword">Password</label>
-          </div>
+          lname: Yup.string()
+            .required("last name is mandatory")
+            .max(20, "last name must be lower than 20 characters"),
 
-          <div className="form-check text-start my-3">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              value="remember-me"
-              id="flexCheckDefault"
-            />
-            <label className="form-check-label" for="flexCheckDefault">
-              Remember me
-            </label>
+          email: Yup.string()
+            .email("email is invalid")
+            .required("email is mandatory"),
+
+          pwd: Yup.string()
+            .required("password is mandatory")
+            .matches(
+              /(?=.[a-zA-Z])(?=.[0-9])(?=.*[!@#$&-])[a-z0-9A-Z!@#$&-]{8,}$/,
+              "password is weak"
+            ),
+
+          cpwd: Yup.string()
+            .required("confirm password is mandatory")
+            .oneOf([Yup.ref("pwd"), null], "passwords must match"),
+        })}
+      >
+        <div className="container">
+          <div className="d-flex justify-content-center">
+            <div className="col-md-5 shadow m-5">
+              <Form className="p-3">
+                <h1 className="text-center">Signup Page</h1>
+
+                <div className="form-floating mb-2">
+                  <Field
+                    type="text"
+                    id="fname"
+                    placeholder=""
+                    className="form-control"
+                    name="fname"
+                  />
+                  <label htmlFor="fname">First Name</label>
+                  <ErrorMessage name="fname">
+                    {(msg) => <div className="text-danger">{msg}</div>}
+                  </ErrorMessage>
+                </div>
+
+                <div className="form-floating mb-3">
+                  <Field
+                    type="text"
+                    id="lname"
+                    placeholder=""
+                    className="form-control"
+                    name="lname"
+                  />
+                  <label htmlFor="lname">Last Name</label>
+                  <ErrorMessage name="lname">
+                    {(msg) => <div className="text-danger">{msg}</div>}
+                  </ErrorMessage>
+                </div>
+
+                <div className="form-floating mb-3">
+                  <Field
+                    type="email"
+                    id="email"
+                    placeholder=""
+                    className="form-control"
+                    name="email"
+                  />
+                  <label htmlFor="email">Email</label>
+                  <ErrorMessage name="email">
+                    {(msg) => <div className="text-danger">{msg}</div>}
+                  </ErrorMessage>
+                </div>
+
+                <div className="form-floating mb-3">
+                  <Field
+                    type="password"
+                    id="pwd"
+                    placeholder=""
+                    className="form-control"
+                    name="pwd"
+                  />
+                  <label htmlFor="pwd">Password</label>
+                  <ErrorMessage name="pwd">
+                    {(msg) => <div className="text-danger">{msg}</div>}
+                  </ErrorMessage>
+                </div>
+
+                <div className="form-floating mb-3">
+                  <Field
+                    type="password"
+                    id="cpwd"
+                    placeholder=""
+                    className="form-control"
+                    name="cpwd"
+                  />
+                  <label htmlFor="cpwd">Confirm Password</label>
+                  <ErrorMessage name="cpwd">
+                    {(msg) => <div className="text-danger">{msg}</div>}
+                  </ErrorMessage>
+                </div>
+                <div className="mb-2 w-100">
+                  <button type="submit" className="btn btn-primary w-100">
+                    Signup
+                  </button>
+                </div>
+              </Form>
+            </div>
           </div>
-          <button className="btn btn-primary w-100 py-2" type="submit">
-            Sign in
-          </button>
-          <p className="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
-        </form>
-      </main>
+        </div>
+      </Formik>
     </>
   );
 };
 
-export default Singnuppage;
+export default SignupPage;
