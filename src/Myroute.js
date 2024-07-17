@@ -11,6 +11,7 @@ import CheckOutPage from "./pages/CheckOutPage";
 import CartPage from "./pages/CartPage";
 import Demo_productPage from "./Demo pages/Demo_productPage";
 import Demo_card from "./Demo pages/Demo_card";
+import NewCart from "./redux/NewCart";
 
 const Myroute = () => {
   return (
@@ -33,6 +34,7 @@ const Myroute = () => {
           <Route path="signup" element={<Singnuppage />} />
           <Route path="login" element={<Loginpage />} />
           <Route path="counter" element={<Counter />} />
+          <Route path="redux/cart" element={<NewCart />} />
         </Routes>
       </Router>
     </>

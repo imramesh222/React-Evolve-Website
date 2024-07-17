@@ -1,82 +1,3 @@
-// import React from "react";
-// import { Formik, Form, Field, ErrorMessage } from "formik";
-// import * as Yup from "yup";
-
-// const LoginPage = () => {
-//   return (
-//     <>
-//       <Formik
-//         initialValues={{
-//           email: "",
-//           pwd: "",
-//         }}
-//         validationSchema={Yup.object({
-//           email: Yup.string()
-//             .email("Email is not valid")
-//             .required("Email is mandatory"),
-
-//           pwd: Yup.string()
-//             .required("Password is mandatory")
-//             .matches(
-//               /(?=.[a-zA-Z])(?=.[0-9])(?=.*[!@#$&-])[a-z0-9A-Z!@#$&-]{8,}$/,
-//               "Wrong Email or Password"
-//             ),
-//         })}
-//         onSubmit={(values) => {
-//           // Handle form submission
-//           console.log(values);
-//         }}
-//       >
-//         <div className="container">
-//           <div className="d-flex justify-content-center">
-//             <div className="col-md-5 shadow m-5">
-//               <Form className="p-3">
-//                 <h1>Login Page</h1>
-
-//                 <div className="form-floating mb-3">
-//                   <Field
-//                     type="email"
-//                     id="email"
-//                     placeholder=""
-//                     className="form-control"
-//                     name="email"
-//                   />
-//                   <label htmlFor="email">Email</label>
-//                   <ErrorMessage name="email">
-//                     {(msg) => <div className="text-danger">{msg}</div>}
-//                   </ErrorMessage>
-//                 </div>
-
-//                 <div className="form-floating mb-3">
-//                   <Field
-//                     type="password"
-//                     id="pwd"
-//                     placeholder=""
-//                     className="form-control"
-//                     name="pwd"
-//                   />
-//                   <label htmlFor="pwd">Password</label>
-//                   <ErrorMessage name="pwd">
-//                     {(msg) => <div className="text-danger">{msg}</div>}
-//                   </ErrorMessage>
-//                 </div>
-
-//                 <div className="mb-2 w-100">
-//                   <button type="submit" className="btn btn-primary w-100">
-//                     Login
-//                   </button>
-//                 </div>
-//               </Form>
-//             </div>
-//           </div>
-//         </div>
-//       </Formik>
-//     </>
-//   );
-// };
-
-// export default LoginPage;
-
 import React from "react";
 import { Field, Form, Formik } from "formik";
 import * as Yup from "yup";
@@ -102,13 +23,24 @@ const Loginpage = () => {
           email: Yup.string()
             .email("Email is invalid")
             .required("Email is mandatory"),
+
+          pwd: Yup.string()
+            .required("Password is mandatory")
+            .matches(
+              /(?=.[a-zA-Z])(?=.[0-9])(?=.[!@#$&-])[a-z)-9A-Z!@#$&-]{8,}$/,
+              "password is weak"
+            ),
+
+          cpwd: Yup.string()
+            .required("Confirm password is mandatory")
+            .oneOf([Yup.ref("pwd"), null], "passwords must match"),
         })}
       >
         <div className="container">
           <div className="d-flex justify-content-center">
             <div className="col-md-5 shadow m-5">
               <Form className="p-3">
-                <h1 className="text-center">Signup</h1>
+                <h1 className="text-center fw-bold">Login Page</h1>
 
                 <div className="form-floating mb-2">
                   <Field
@@ -166,9 +98,15 @@ const Loginpage = () => {
                     id="cpwd"
                     placeholder=""
                   />
-                  <label htmlFor="cpwd">Confirl Password</label>
+                  <label htmlFor="cpwd">Confirm Password</label>
                   {(msg) => <div className="text-danger">{msg}</div>}
                 </div>
+                <input
+                  type="submit"
+                  name="submit"
+                  id="submit"
+                  value={"Submit"}
+                />
               </Form>
             </div>
           </div>
