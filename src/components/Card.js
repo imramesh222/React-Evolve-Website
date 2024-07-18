@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Card = (props) => {
-  const { item } = props;
+const Card = ({ item }) => {
+  // const { item } = props;
 
   if (!item) {
     return null; // Or a loading spinner or placeholder
