@@ -34,7 +34,7 @@ const Myroute = () => {
           <Route path="signup" element={<Singnuppage />} />
           <Route path="login" element={<Loginpage />} />
           <Route path="counter" element={<Counter />} />
-          <Route path="redux/cart" element={<NewCart />} />
+          <Route path="redux" element={<NewCart />} />
         </Routes>
       </Router>
     </>

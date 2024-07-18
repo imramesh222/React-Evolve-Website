@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 
 import Myroute from "./Myroute";
 
-import NewCart from "./redux/NewCart";
 //it helps to know the compiler that our reducer is a store
 import { createStore } from "redux";
 import { Provider } from "react-redux";
