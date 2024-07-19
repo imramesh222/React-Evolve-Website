@@ -3,7 +3,20 @@ const initialData = {
 };
 
 const cartReducer = (state = initialData, action) => {
-  return state;
+  switch (action.type) {
+    case "AddToCart":
+      return {
+        cart: ++state.cart,
+      };
+      break;
+    case "RemoveFromCart":
+      return {
+        cart: --state.cart,
+      };
+      break;
+    default:
+      return state;
+  }
 };
 
 export default cartReducer;
