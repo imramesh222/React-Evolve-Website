@@ -10,7 +10,7 @@ import ProductDetail from "./pages/ProductDetail";
 import CheckOutPage from "./pages/CheckOutPage";
 import CartPage from "./pages/CartPage";
 import Demo_productPage from "./Demo pages/Demo_productPage";
-import Demo_card from "./Demo pages/Demo_card";
+
 import NewCart from "./redux/NewCart";
 
 const Myroute = () => {
