@@ -1,33 +1,29 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.carousel-item{
+.carousel-item {
   height: 400px;
   width: 100%;
 }
-.carousel-item img{
+.carousel-item img {
   width: 100%;
   height: 100%;
 }
-.carousel-control-prev{
+.carousel-control-prev {
   margin-left: 0;
 }
-.carousel-control-next{
+.carousel-control-next {
   margin-right: 0;
 }
-.nav-link>h1{
+.nav-link > h1 {
   font-size: 20px;
   justify-content: space-between;
 }
 
-
-
-
-
-/* for card img */
-#img{
+/* for card image */
+#img {
   height: 200px;
   object-fit: contain;
 }
@@ -39,11 +35,9 @@
 }
 
 /* for nav */
-.nav-link:hover{
+.nav-link:hover {
   color: #fff;
   background: rgb(8, 8, 8);
-  
+
   border-radius: 5px;
 }
-
-
